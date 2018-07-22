@@ -101,6 +101,7 @@ public:
   difficulty_type nextDifficultyV3(uint8_t version, uint32_t blockIndex, std::vector<uint64_t> timestamps, std::vector<difficulty_type> cumulativeDifficulties) const;
 
   difficulty_type nextDifficultyV4(std::vector<uint64_t> timestamps, std::vector<difficulty_type> cumulativeDifficulties, uint32_t blockIndex) const;
+  difficulty_type nextDifficultyV5(std::vector<uint64_t> timestamps, std::vector<difficulty_type> cumulativeDifficulties, uint32_t blockIndex) const;
 
   bool checkProofOfWork(Crypto::cn_context& context, const Block& block, difficulty_type currentDiffic, Crypto::Hash& proofOfWork) const;
 
