@@ -16,10 +16,12 @@ const size_t   TycheCash_MAX_TX_SIZE                        = 1000000000;
 const uint64_t TycheCash_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x31;
 const size_t   TycheCash_MINED_MONEY_UNLOCK_WINDOW          = 60;
 const uint64_t TycheCash_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 *2;
-const uint64_t TycheCash_BLOCK_FUTURE_TIME_LIMIT_V1			= 60 *60 * 2;
+const uint64_t TycheCash_BLOCK_FUTURE_TIME_LIMIT_V1	    = 60 *60 * 2;
 const size_t   TycheCash_HARDFORK_HEIGHT_V2                 = 12998;
-const size_t   TycheCash_HARDFORK_HEIGHT_V3		            = 61010;
-const size_t   TycheCash_HARDFORK_HEIGHT_V4					= 75900;
+const size_t   TycheCash_HARDFORK_HEIGHT_V3		    = 61010;
+const size_t   TycheCash_HARDFORK_HEIGHT_V4		    = 75900;
+const size_t   TycheCash_HARDFORK_HEIGHT_V5		    = 83453;
+
 
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW            = 30;
 
@@ -42,14 +44,11 @@ const size_t   DIFFICULTY_WINDOW = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY;
 const size_t   DIFFICULTY_WINDOW_V1 = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY;
 const size_t   DIFFICULTY_WINDOW_V2 = 70;
 const size_t   DIFFICULTY_WINDOW_V3 = 70;
+const size_t   DIFFICULTY_WINDOW_V4 = 60;// not used 
+const size_t   DIFFICULTY_WINDOW_V5 = 60;
+
 const size_t   DIFFICULTY_CUT = 60;  // timestamps to cut after sorting
-const size_t   DIFFICULTY_CUT_V1 = 60;
-const size_t   DIFFICULTY_CUT_V2 = 60;
-const size_t   DIFFICULTY_CUT_V3 = 60;
 const size_t   DIFFICULTY_LAG = 15;  // !!!
-const size_t   DIFFICULTY_LAG_V1 = 15;
-const size_t   DIFFICULTY_LAG_V2 = 15;
-const size_t   DIFFICULTY_LAG_V3 = 0;
 static_assert(2 * DIFFICULTY_CUT <= DIFFICULTY_WINDOW - 2, "Bad DIFFICULTY_WINDOW or DIFFICULTY_CUT");
 
 const size_t   MAX_BLOCK_SIZE_INITIAL                       = 20 * 1024;
